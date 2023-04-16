@@ -1,0 +1,136 @@
+\documentclass[xcolor=table]{beamer}
+
+\graphicspath{{figs/}{./figs/}}
+\mode<presentation>
+{
+%  \usetheme{Warsaw}
+  \usetheme{Frankfurt}
+%  \setbeamercovered{transparent}
+  \usecolortheme{crane}
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{section in toc shaded}[default][60]
+  \setbeamertemplate{subsection in toc shaded}[default][50]
+  \setbeamertemplate{footline}[frame number]
+}
+
+
+\mode<handout>
+{
+  \beamertemplatesolidbackgroundcolor{black!5}
+  \usecolortheme{dove}
+%  \usecolortheme{seagull}
+}
+
+\usepackage{url}
+
+% Please add the following required packages to your document preamble:
+\usepackage{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+
+\title{Information Security -- attacks and defence}
+
+\author[hmd1]{Hannah Dee \\
+  \texttt{hmd1@aber.ac.uk}} 
+\date{}
+\institute[]{U3A Aberystwyth, April 2023\\
+  Aberystwyth University, Department of Computer Science}
+
+
+
+%\beamerdefaultoverlayspecification{<+->}
+
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>
+    \frametitle{Outline}
+    \tableofcontents[currentsection,currentsubsection,hideothersubsections]
+  \end{frame}
+}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Hackers, crackers, and con artists}
+
+\begin{frame}{More of our lives are lived online}
+\end{frame}
+
+\begin{frame}{Your data is valuable}
+\end{frame}
+
+\section{System-wide attacks}
+
+\begin{frame}{Why's it important?}
+
+\end{frame}
+
+\section{Direct attacks}
+
+\begin{frame}{Why's it important?}
+
+\end{frame}
+
+\section{The future of hacking}
+\begin{frame}{On a positive note\ldots}
+
+Only kidding. 
+
+
+	\vspace{0.5em}
+
+	This is not a positive talk.
+
+	\vspace{0.5em}
+
+	\textbf{I see three future trends which will make all this worse}
+
+\end{frame}
+\begin{frame}{IoT}
+	IoT means ``Internet of Things''
+	\begin{itemize}
+		\item Internet connected devices aren't just computers
+			\begin{itemize}
+				\item car
+				\item thermostat
+				\item lightbulbs
+				\item toaster
+			\end{itemize}
+		\item This gives a much bigger ``attack surface''
+	\end{itemize}
+
+\end{frame}
+\begin{frame}{AI}
+	How could AI language models create realistic emails?
+	\begin{itemize}
+		\item AI language models can create realistic emails by using natural language generation algorithms that are trained on large data sets of real emails. These models can analyze patterns in the language and style of real emails, and then generate new emails that are similar in structure and content to the real ones.
+
+		\item Additionally, AI language models can be programmed to personalize emails based on information that is gathered about the target recipient. This information can include the recipient's name, location, job title, or other details that make the email seem more targeted and legitimate.
+
+		\item However, it is important to note that the use of AI to create convincing phishing emails is unethical and illegal. AI should be used in a responsible manner and not for illicit purposes such as cybercrime.
+	\end{itemize}
+\end{frame}
+\begin{frame}{Deepfakes}
+	\begin{itemize}
+		\item We've already seen (last year, in the USA) voice-based scans which used AI to mimic the vocal patterns of a trusted person.
+		\item Scammers can take a video of someone you know, and from that generate a video of that person saying absolutely anything.
+		\item In a few years, expect realistic video, real-time. 
+	\end{itemize}
+
+	The voice on the phone may sound like someone you know, or the face in the zoom call might look like someone you know\ldots 
+
+	\vspace{0.5em}
+
+	But are they?
+\end{frame}
+
+
+\begin{frame}{Any questions?}
+\end{frame}
+
+
+\end{document}

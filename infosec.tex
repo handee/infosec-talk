@@ -55,14 +55,70 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Hackers, crackers, and con artists}
+\section{Intro}
 
 \begin{frame}{More of our lives are lived online}
+	It seems like (some) people now use the internet for pretty much everything
+	\begin{itemize}
+		\item Banking
+		\item Grocery Shopping
+		\item Socialising 
+		\item Buying holidays
+		\item Filling in tax returns
+		\item Watching TV and films 
+		\item Romance (?!) 
+	\end{itemize}
+\end{frame}
+\begin{frame}{Information security: CIA}
+	The predominant conceptual framework in information security is CIA
+	\begin{itemize}
+		\item Confidentiality: we want things to be visible only to those people allowed to see them
+		\item Integrity: we want things to be changeable only by those people allowed to change them 
+		\item Availability: we want things to be accessible when we need to access them
+	\end{itemize}
+	Thinking about our activity online in these terms can clarify lots of things
+\end{frame}
+\begin{frame}{Identity}
+	You can't have CIA without being able to determine the identity of people who are interacting with your systems.
+	\begin{itemize}
+		\item We all have multiple intersecting identities
+			\begin{itemize}
+				\item NI number, UTR, bank account number, passport number, email address, facebook id \ldots
+			\end{itemize}
+		\item We can prove or validate these identities in a host of different ways
+			\begin{itemize}
+				\item Documents, passports, bank cards, PINs, and probably, several hundred passwords\ldots
+			\end{itemize}
+	\end{itemize}
+
 \end{frame}
 
 \begin{frame}{Your data is valuable}
+	\begin{itemize}
+		\item Your identity is valuable, so things which you might use to prove your identity are also valuable
+		\item You might not consider things like address, phone number and so on to be sensitive 
+		\item PII (personal identifying information) is worth protecting
+	\end{itemize}
+\end{frame}
+\begin{frame}{Passwords and other authenticators}
+	\begin{itemize}
+		\item Passwords are a flawed system
+		\item We are poor at remembering them
+		\item We are bad at choosing them
+		\item We manage them badly
+	\end{itemize}
+	What other systems are there?
+\end{frame}
+\begin{frame}{Multi-factor authentication (MFA / 2FA)}
+	\begin{itemize}
+		\item Inherence: things you are (face, fingerprint, voice, other biometrics)
+		\item Posession: things you have (smartphone, telephone, tokens, badges and cards)
+		\item Knowledge: things you remember ('cognitive passwords', pin numbers)
+	\end{itemize}
 \end{frame}
 
+\begin{frame}{Hackers, crackers, and con artists}
+\end{frame}
 \section{Technical attacks}
 
 \begin{frame}{Why's it important?}
@@ -171,6 +227,8 @@ Human beings are essentially social creatures.
 
 \section{The future of hacking}
 \begin{frame}{On a positive note\ldots}
+\end{frame}
+\begin{frame}{On a positive note\ldots}
 
 Only kidding. 
 
@@ -189,9 +247,13 @@ Only kidding.
 	\begin{itemize}
 		\item Internet connected devices aren't just computers
 			\begin{itemize}
-				\item car
+				\item speaker
 				\item thermostat
+				\item doorbell
+				\item smoke alarm
+				\item watch
 				\item lightbulbs
+				\item car
 				\item toaster
 			\end{itemize}
 		\item This gives a much bigger ``attack surface''

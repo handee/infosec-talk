@@ -61,16 +61,26 @@
 	It seems like (some) people now use the internet for pretty much everything
 	\begin{itemize}
 		\item Banking
-		\item Grocery Shopping
+		\item Shopping
 		\item Socialising 
-		\item Buying holidays
 		\item Filling in tax returns
 		\item Watching TV and films 
 		\item Romance (?!) 
 	\end{itemize}
 \end{frame}
+\begin{frame}{The Internet solves a lot of problems}
+	It also lets us make more mistakes, more quickly, than ever before.
+
+	\vspace{0.5em}
+
+	It exposes us to the mistakes of others on a wider scale than ever before.
+
+	\vspace{0.5em}
+
+	And it opens us up to more scammers, from a wider range of places, than ever before.
+\end{frame}
 \begin{frame}{Information security: CIA}
-	The predominant conceptual framework in information security is CIA
+	Information security uses the CIA framework:
 	\begin{itemize}
 		\item Confidentiality: we want things to be visible only to those people allowed to see them
 		\item Integrity: we want things to be changeable only by those people allowed to change them 
@@ -78,6 +88,14 @@
 	\end{itemize}
 	Thinking about our activity online in these terms can clarify lots of things
 \end{frame}
+\begin{frame}{Cyberattacks}
+	\begin{itemize}
+		\item Confidentiality - they want to find out something they shouldn't know, like stealing state secrets
+		\item Integrity - they want to change something, like your bank balance
+		\item Availability - they want to stop something working, for example by taking down a website they don't like
+	\end{itemize}
+\end{frame}
+\section{Protect your data and identity}
 \begin{frame}{Identity}
 	You can't have CIA without being able to determine the identity of people who are interacting with your systems.
 	\begin{itemize}
@@ -101,27 +119,87 @@
 	\end{itemize}
 \end{frame}
 \begin{frame}{Passwords and other authenticators}
+	How many passwords do you have?
+
+	\vspace{0.5em}
+
+	How do you choose them?
+
+	\vspace{0.5em}
+
+	How do you remember them?
+\end{frame}
+\begin{frame}{Passwords and other authenticators}
+		Passwords are a flawed system
 	\begin{itemize}
-		\item Passwords are a flawed system
 		\item We are poor at remembering them
 		\item We are bad at choosing them
 		\item We manage them badly
+		\item They are sometimes leaked in hacking events or through incompetence
 	\end{itemize}
-	What other systems are there?
 \end{frame}
+\begin{frame}{Don't make it easy for attackers}
+	If a site is compromised, attackers might steal:
+	\begin{itemize}
+		\item Name, address
+		\item Payment data
+		\item Usernames 
+		\item Passwords 
+	\end{itemize}
+	If you've re-used the password, any hacker has an easy job.
+	\vspace{0.5em}
+	You can see if you've been in a breach at \url{https://haveibeenpwned.com/}
+\end{frame}
+	\begin{frame}{Recommendation 1}
+
+		Use a password manager so you don't have to recall 100s of passwords, and you don't re-use passwords. 
+
+		\vspace{0.5em}
+
+		\url{https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/password-managers}
+	\end{frame}
 \begin{frame}{Multi-factor authentication (MFA / 2FA)}
+	What other systems are there?
 	\begin{itemize}
 		\item Inherence: things you are (face, fingerprint, voice, other biometrics)
 		\item Posession: things you have (smartphone, telephone, tokens, badges and cards)
 		\item Knowledge: things you remember ('cognitive passwords', pin numbers)
 	\end{itemize}
 \end{frame}
+	\begin{frame}{Recommendation 2}
 
-\begin{frame}{Hackers, crackers, and con artists}
+Turn on multi-factor authentication for anything important. 
+
+		\vspace{0.5em}
+
+		Email, definitely (it's the gateway to everything else)
+
+
+		\vspace{0.5em}
+
+		\url{https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/activate-2-step-verification-on-your-email}
+	\end{frame}
+
+\begin{frame}{Internet and computer systems are under constant attack}
+	\begin{itemize}
+		\item Software applications are investigated by not only by ``threat actors'' but also by ``bug hunters'' 
+		\item When security holes are found, they're reported to the companies in question
+		\item This means that often, software is \emph{patched} before any holes are \emph{exploited}
+	\end{itemize}
+
+	You can't take advantage of these fixes if you're running old versions
 \end{frame}
-\section{Technical attacks}
+\begin{frame}{Recommendation 3}
 
-\begin{frame}{Why's it important?}
+	Install software updates. 
+
+	\vspace{0.5em}
+
+	\url{https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/install-the-latest-software-and-app-updates}
+
+	\vspace{0.5em} 
+
+	(This also applies to ``smart devices'' - watches, Alexa-type things, etc.)
 
 \end{frame}
 
@@ -161,56 +239,298 @@ Human beings are essentially social creatures.
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Pretexting}
-	A family of attack types (could be a phishing attack, or an in-person attack) where the attacker tries to establish a rapport
-	\begin{itemize}
-		\item Might dress as an engineer from a particular company
-		\item Might know details that make them appear more trustworthy
-		\item Generates a \emph{pretext} which makes them seem plausible
-	\end{itemize}
-
+\begin{frame}{An exercise!}
+	Look at the handout, and consider one of the examples
+	\begin{enumerate}
+		\item What's the scammer exploiting? (Fear? Greed? Desire to help others? Sense of urgency?)
+		\item What makes the message suspicious?
+		\item What do you think would happen if you fell for it?
+	\end{enumerate}
 
 \end{frame}
-
-\begin{frame}{Baiting}
-	Enticing people to install something that's not quite what it seems
+\begin{frame}{What happens when you follow it up?}
 	\begin{itemize}
-		\item CD-ROMS through the post
-		\item USB sticks left in public places
-		\item Free downloads that have a malicious aspect
+		\item Might be a site that looks genuine
+		\item Might be a site that smells fishy
+		\item Might engage you in conversation trying to get you to give over details
+		\item Might ask you to pay for something
 	\end{itemize}
 \end{frame}
-\begin{frame}{Quid-pro-quo}
-	Similar to baiting,  however you are getting a service.
+
+\begin{frame}[fragile]
+\begin{small}
+	\begin{verbatim}
+from: prof. chris price <cjp.aberac.uk@gmail.com>
+sent: 25 october 2018 11:28:09
+to: hannah dee [hmd1]
+subject: are you on campus?
+ 
+
+are you available?
+sent from my iphone
+	\end{verbatim}
+\end{small}
+\end{frame}
+
+\begin{frame}[fragile]
+\begin{small}
+	\begin{verbatim}
+
+--------------------------------------------------------------------
+prifysgol aberystwyth www.aber.ac.uk
+prifysgol y flwyddyn ar gyfer ansawdd dysgu - the times & the sunday times 2019.
+
+aberystwyth university www.aber.ac.uk
+university of the year for teaching quality - the times & the sunday times 2019. 
+
+-- 
+personal chair
+contact details
+• email: cjp@aber.ac.uk
+• office: e48, llandinam building
+• phone: +44 (0) 1970 622444
+• Personal Website: http://users.aber.ac.uk/cjp
+	\end{verbatim}
+\end{small}
+\end{frame}
+
+\begin{frame}[fragile]
+\begin{small}
+	\begin{verbatim}
+
+
+On Thu, 25 Oct 2018 at 12:04 PM, Hannah Dee [hmd1]
+	<hmd1@aber.ac.uk> wrote:
+
+nope not today, i'm at home. could be in in 15 if needed?
+
+
+-- 
+Dr Hannah Dee, Senior Lecturer,
+Computer Science,
+Aberystwyth University,
+http://users.aber.ac.uk/hmd1
+
+	\end{verbatim}
+\end{small}
+\end{frame}
+
+\begin{frame}[fragile]
+\begin{small}
+	\begin{verbatim}
+
+I'm in a meeting right now and that's why I’m contacting you
+through here. I should have called you but phone is
+not allowed to be used during the meeting. I don't
+know when the meeting will be rounding off and I
+want you to help me out on something very important
+right away.
+
+	\end{verbatim}
+\end{small}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\begin{small}
+	\begin{verbatim}
+
+what would you like me to do?
+
+
+	\end{verbatim}
+\end{small}
+\end{frame}
+
+
+ 
+\begin{frame}[fragile]
+\begin{small}
+	\begin{verbatim}
+
+I need you to help me get iTunes Gift cards from the
+store, I will reimburse you back when I get back to
+the office. I need to send it to someone and it is
+very important. I’m still in a meeting and I need to
+get it sent right away. It’s for a programming setup
+on apple gadgets. The amount I need you to get right
+now is £600 I will be reimbursing back to you. I
+need physical cards which you are going to get from
+the store. When you get them, scratch it and take
+pictures of the cards and attach it to this email
+then  send it to me here ok.
+
+\end{verbatim}
+\end{small}
+\end{frame}
+
+\begin{frame}[fragile]
+\begin{small}
+\begin{verbatim}
+
+sure i can do that. where should i go to get the physical
+cards? do they sell them in IBERS Bach?
+
+	\end{verbatim}
+\end{small}
+\end{frame}
+
+ 
+\begin{frame}[fragile]
+\begin{small}
+	\begin{verbatim}
+No, go to other stores. 
+
+	\end{verbatim}
+\end{small}
+\end{frame}
+
+\begin{frame}[fragile]
+\begin{small}
+	\begin{verbatim}
+Which stores would you recommend? I haven't got much time
+
+	\end{verbatim}
+\end{small}
+\end{frame}
+
+\begin{frame}[fragile]
+\begin{small}
+	\begin{verbatim}
+ 
+Walmart.
+	\end{verbatim}
+\end{small}
+\end{frame}
+
+\begin{frame}[fragile]
+\begin{small}
+	\begin{verbatim}
+
+Walmart is a bit challenging - i'm not sure I can get there
+and back in time. Might they sell them in Harrods?
+
+
+	\end{verbatim}
+\end{small}
+\end{frame}
+ 
+\begin{frame}[fragile]
+\begin{small}
+	\begin{verbatim}
+
+	Yes, I think you should get them there.
+
+	\end{verbatim}
+\end{small}
+\end{frame}
+\begin{frame}[fragile]
+\begin{small}
+	\begin{verbatim}
+
+
+Great I'll just pop to Harrods. Should be back in about 20
+	mins. Remind me what you want me to do with these
+	cards? 
+
+	\end{verbatim}
+\end{small}
+\end{frame}
+
+\begin{frame}[fragile]
+\begin{small}
+	\begin{verbatim}
+ 
+I need you to scratch the cards and attach them to this email.
+
+	\end{verbatim}
+\end{small}
+\end{frame}
+\begin{frame}[fragile]
+\begin{small}
+	\begin{verbatim}
+
+
+ok i'm back from harrods with the cards and i have scratched
+	them but i am not sure how to attach the cards to
+	this email. 
+
+	\end{verbatim}
+\end{small}
+\end{frame}
+\begin{frame}[fragile]
+\begin{small}
+	\begin{verbatim}
+ 
+Take pictures of the cards and send to this email.
+
+	\end{verbatim}
+\end{small}
+\end{frame}
+\begin{frame}[fragile]
+\begin{small}
+	\begin{verbatim}
+
+oh, you want pictures of them? 
+
+
+i have to wait for my camera to charge. 
+
+
+	\end{verbatim}
+\end{small}
+\end{frame}
+\begin{frame}[fragile]
+\begin{small}
+	\begin{verbatim}
+ 
+You can write codes out and send here.
+
+
+	\end{verbatim}
+\end{small}
+\end{frame}
+\begin{frame}[fragile]
+\begin{small}
+	\begin{verbatim}
+
+
+you want me to write you some code?
+
+
+what language?
+
+	\end{verbatim}
+\end{small}
+\end{frame}
+\begin{frame}{Other variants of basically the same scam \ldots}
 
 	\begin{itemize}
-		\item Visa application sites which will carry out things for a (hefty) fee
-		\item Passport application checkers which charge hundreds of pounds 
-		\item \ldots
+		\item ``Hi Mum'' my phone's been stolen so I'm borrowing a friends, can I get some money to get home?
+		\item  I need to get a ticket home, can you \ldots
+		\item  I need amazon vouchers \ldots
 	\end{itemize}
 
-	If it's free, there's a chance the price you'll pay is data.
+	\end{frame}
+\begin{frame}{Consumer level phone scam}
+		Phone calls to residential numbers from people who claim to be Microsoft technicians (Apple support, 	Amazon prime, Paypal, customs and excise, ...) calling from a `Support Team'. 
+	\begin{itemize}
+		\item They might even spoof the caller ID {\small(so it looks genuine)}
+		\item ``Your computer has a problem''
+	\end{itemize}
 
-	\vspace{0.5em}
+	To `prove it' they might:
+	\begin{itemize}
+		\item Show you `error messages' often on fake websites (with a number to call). 
+		\item Or full screening your browser with popup messages that won't go away 
+		-- locking up the browser {(\small `so computer not work, sir')}.
+		\item Or by a opening console app and viewing system logs where there are usually a 
+		lot of `warnings' and `errors' and crash logs. 
+	\end{itemize}
 
+	{\bf What do they actually want to do?}
 
-	Some argue that social media is a quid-pro-quo attack on a grand scale \ldots
 \end{frame}
-
-\begin{frame}{Tailgating}
-	This is very much a physical attack -- and one which organisations have to defend against, more frequently than individuals.
-
-	\vspace{0.5em}
-
- 	This refers to sneaking through door behind a legitimate employee.  
-
-	\vspace{0.5em}
-
-	Hacker accounts feature lots of ``hanging around in smoking areas''
-
-\end{frame}
-
-
 
 \begin{frame}{Social engineering creates a blended attack}
 	What are they trying to (get you to) do? 
@@ -221,9 +541,29 @@ Human beings are essentially social creatures.
 		\item Install other \textbf{spyware}
 		\item Give away a password
 		\item Give away data
+		\item Hand over money (either for a service,
+			or through pretending to be a person
+			in need)
 	\end{itemize}
+		
+
+	
+	\vspace{0.5em}
+
 	Rarely (but not never) will you do damage by simply downloading a thing from the Internet. 
 \end{frame}
+
+\begin{frame}{Recommendation 4}
+	If an email or a call feels suspicious, it probably is.
+
+	\begin{enumerate}
+		\item Check independently - can you ask for an official number to call them back on?
+		\item Don't let yourself be rushed into anything
+		\item Report scam emails
+	\end{enumerate}
+	\url{https://www.ncsc.gov.uk/collection/phishing-scams/report-scam-email}
+	\end{frame}
+
 
 \section{The future of hacking}
 \begin{frame}{On a positive note\ldots}
@@ -283,7 +623,17 @@ Only kidding.
 
 	But are they?
 \end{frame}
-
+\begin{frame}{My recommendations again:}
+	\begin{enumerate}
+		\item Use a password manager.
+		\item Turn on multi-factor authentication
+			for anything important.
+		\item Install software updates.
+		\item If a message feels suspicious, it
+			probably is. Leave it or report it,
+			don't answer or follow links.
+	\end{enumerate}
+\end{frame}
 
 \begin{frame}{Any questions?}
 \end{frame}

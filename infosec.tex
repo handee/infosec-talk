@@ -57,7 +57,8 @@
 
 \section{Intro}
 
-\begin{frame}{More of our lives are lived online}
+\begin{frame}{More of our lives are lived online than ever
+	before}
 	It seems like (some) people now use the internet for pretty much everything
 	\begin{itemize}
 		\item Banking
@@ -98,6 +99,9 @@
 \section{Protect your data and identity}
 \begin{frame}{Identity}
 	You can't have CIA without being able to determine the identity of people who are interacting with your systems.
+
+	\vspace{0.5em}
+
 	\begin{itemize}
 		\item We all have multiple intersecting identities
 			\begin{itemize}
@@ -114,9 +118,11 @@
 \begin{frame}{Your data is valuable}
 	\begin{itemize}
 		\item Your identity is valuable, so things which you might use to prove your identity are also valuable
-		\item You might not consider things like address, phone number and so on to be sensitive 
 		\item PII (personal identifying information) is worth protecting
 	\end{itemize}
+
+	\vspace{0.5em}
+	If threat actors can assume your identity, you've got a problem.
 \end{frame}
 \begin{frame}{Passwords and other authenticators}
 	How many passwords do you have?
@@ -147,7 +153,9 @@
 		\item Passwords 
 	\end{itemize}
 	If you've re-used the password, any hacker has an easy job.
+
 	\vspace{0.5em}
+	
 	You can see if you've been in a breach at \url{https://haveibeenpwned.com/}
 \end{frame}
 	\begin{frame}{Recommendation 1}
@@ -506,14 +514,30 @@ what language?
 \begin{frame}{Other variants of basically the same scam \ldots}
 
 	\begin{itemize}
-		\item ``Hi Mum'' my phone's been stolen so I'm borrowing a friends, can I get some money to get home?
+		\item ``Hi Mum'' my phone's been stolen so
+			I'm borrowing a friends, can I get
+			some money to get a new phone?
 		\item  I need to get a ticket home, can you \ldots
 		\item  I need amazon vouchers \ldots
 	\end{itemize}
 
 	\end{frame}
+	\begin{frame}{MFA scam}
+		\begin{itemize}
+				
+		\item ``My whatsapp (or some other system) has been hacked they'll
+			send out a code but my phone's not
+				working can you let me know
+			the code?''
+		\item You get a reset code from the service in
+			question
+		\item You send the code to the scammer
+		\item That scammer now has your login to the
+			service in question
+		\end{itemize}
+	\end{frame}
 \begin{frame}{Consumer level phone scam}
-		Phone calls to residential numbers from people who claim to be Microsoft technicians (Apple support, 	Amazon prime, Paypal, customs and excise, ...) calling from a `Support Team'. 
+		Phone calls from people who claim to be technicians calling from a `Support Team'. 
 	\begin{itemize}
 		\item They might even spoof the caller ID {\small(so it looks genuine)}
 		\item ``Your computer has a problem''
@@ -521,7 +545,7 @@ what language?
 
 	To `prove it' they might:
 	\begin{itemize}
-		\item Show you `error messages' often on fake websites (with a number to call). 
+		\item Show you `error messages' often on fake websites. 
 		\item Or full screening your browser with popup messages that won't go away 
 		-- locking up the browser {(\small `so computer not work, sir')}.
 		\item Or by a opening console app and viewing system logs where there are usually a 
